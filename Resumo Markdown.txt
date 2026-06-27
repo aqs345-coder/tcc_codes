@@ -1,0 +1,111 @@
+=== RESUMO MARKDOWN ===
+
+O Markdown é uma linguagem de marcação leve usada para formatar texto.
+No Jupyter Notebook, células em Markdown renderizam o conteúdo como HTML ao
+serem executadas (Shift+Enter).
+
+
+--- ELEMENTOS BÁSICOS ---
+
+Títulos:
+  # Título nível 1
+  ## Título nível 2
+  ### Título nível 3
+  #### Título nível 4
+  ##### Título nível 5
+  ###### Título nível 6
+
+Ênfase:
+  *itálico* ou _itálico_
+  **negrito** ou __negrito__
+  ***negrito e itálico*** ou ___negrito e itálico___
+  ~~texto riscado~~
+
+Listas não ordenadas:
+  - Item 1
+  - Item 2
+    - Subitem
+
+Listas ordenadas:
+  1. Primeiro
+  2. Segundo
+      1. Subitem (com 4 espaços)
+
+Links:
+  [texto exibido](https://url.com)
+  [texto com tooltip](https://url.com "Título ao passar mouse")
+
+Imagens:
+  ![texto alternativo](caminho/para/imagem.png)
+
+Código:
+  `código inline` (com crases simples)
+  ```python
+  bloco de código com syntax highlighting
+  print("olá")
+  ```
+
+Citações (blockquote):
+  > Texto citado
+  >> Citação aninhada
+
+Linha horizontal:
+  ---
+  ***
+  ___
+
+Tabelas:
+  | Coluna 1 | Coluna 2 | Coluna 3 |
+  |----------|----------|----------|
+  | Valor A  | Valor B  | Valor C  |
+  | Valor D  | Valor E  | Valor F  |
+
+  Alinhamento em tabelas:
+  | Esquerda | Centro | Direita |
+  |:---------|:------:|--------:|
+  | texto    | texto  | texto   |
+
+Checkboxes (task list):
+  - [x] Tarefa concluída
+  - [ ] Tarefa pendente
+
+
+--- MATEMÁTICA (LaTeX) ---
+
+Notação inline: $E = mc^2$
+
+Bloco de equação:
+  $$
+  \int_{a}^{b} f(x) \, dx
+  $$
+
+
+--- HTML ---
+
+Tags HTML funcionam diretamente em células Markdown:
+  <sub>subscrito</sub>
+  <sup>sobrescrito</sup>
+  <br> (quebra de linha)
+  <span style="color: red;">texto colorido</span>
+  <div align="center">texto centralizado</div>
+
+
+--- DICAS ÚTEIS NO JUPYTER ---
+
+- Shift+Enter: executa a célula e avança para a próxima
+- Ctrl+Enter: executa a célula sem avançar
+- Ctrl+Shift+P (Mac) / Ctrl+P (Win): paleta de comandos
+- Para alternar entre código e markdown: use o menu suspenso na toolbar
+  ou o atalho Esc + M (markdown) / Esc + Y (code)
+- ApoStar textos com Markdown + LaTeX para documentar análises e resultados
+- Use tabelas para sumarizar métricas e resultados de modelos
+- Use checkboxes para criar roteiros de etapas da análise
+
+
+--- BOAS PRÁTICAS ---
+
+- Títulos hierárquicos consistentes (não pule de H1 para H3)
+- Prefira links descritivos em vez de "clique aqui"
+- Evite linhas muito longas (use ~80 caracteres como guia)
+- Use blocos de código com a linguagem especificada para syntax highlighting
+- Documente células Markdown ANTES do código que as implementa
