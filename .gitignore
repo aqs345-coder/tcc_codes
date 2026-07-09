@@ -3,3 +3,4 @@ Resumo Markdown*
 .vscode*
 venv*
 .opencode*
+.ruff_cache
