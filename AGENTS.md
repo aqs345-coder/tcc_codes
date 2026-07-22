@@ -11,7 +11,9 @@ Kalman filter data science project — notebooks only, no `.py` files.
 ## Commands
 
 ```sh
+python -m venv venv                    # one-time setup
 venv\Scripts\activate                  # Windows — always activate first
+pip install -r requirements.txt        # install deps
 ruff check .                          # lint
 black --check .                       # verify formatting (CI-style)
 ruff check --fix .                    # auto-fix + organize imports
@@ -30,7 +32,16 @@ black .                               # format
 
 - No `.py` files — all code lives in notebook cells.
 - Always format (Black) before committing.
+- Directory and file names are in **Portuguese** (e.g., `exemplos/`, `examplo_1.ipynb`).
 - `.gitignore` excludes `venv/`, `Resumo Markdown*`, `.vscode*`, `.opencode*`, `.ruff_cache`.
+
+## Common libraries
+
+numpy, scipy, matplotlib, pandas, seaborn, scikit-learn — all in `requirements.txt`.
+
+## OpenCode
+
+- Skill `refazer-codigo` available for rewriting/improving existing notebook code.
 
 ## Notebook work
 
